@@ -1,0 +1,15 @@
+# Jarvis Voice Assistant Requirements
+
+# Speech-to-Text
+RealtimeSTT>=0.1.0
+
+# OpenAI API
+openai>=1.0.0
+
+# Audio playback
+pygame>=2.0.0
+
+# Additional dependencies that might be needed
+numpy>=1.21.0
+scipy>=1.7.0
+

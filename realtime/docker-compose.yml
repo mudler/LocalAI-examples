@@ -1,0 +1,12 @@
+version: '3.6'
+
+services:
+  localai:
+    image: quay.io/go-skynet/local-ai:latest
+    ports:
+      - 8080:8080
+    volumes:
+      - ./models:/models:cached
+      - ./backends:/backends:cached
+    command: ["qwen3-0.6b", "voice-en-us-amy-low", "whisper-large-turbo-q5_0"]
+    restart: unless-stopped
