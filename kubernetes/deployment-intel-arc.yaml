@@ -40,8 +40,8 @@ spec:
           - name: DEBUG
             value: "true"
           name: local-ai
-          image: quay.io/go-skynet/local-ai:master-sycl-f32-ffmpeg-core
-          imagePullPolicy: Always
+          image: localai/localai:latest-gpu-intel
+          imagePullPolicy: IfNotPresent
           resources:
             limits:
               gpu.intel.com/i915: 1

@@ -41,7 +41,7 @@ spec:
           - name: DEBUG
             value: "true"
           name: local-ai
-          image: quay.io/go-skynet/local-ai:master-cublas-cuda12
+          image: localai/localai:latest-gpu-nvidia-cuda-12
           imagePullPolicy: IfNotPresent
           resources:
             limits:

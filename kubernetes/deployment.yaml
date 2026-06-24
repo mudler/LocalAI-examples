@@ -40,7 +40,7 @@ spec:
           - name: DEBUG
             value: "true"
           name: local-ai
-          image: quay.io/go-skynet/local-ai:master
+          image: localai/localai:latest
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - name: models-volume
